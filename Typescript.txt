@@ -1,0 +1,40 @@
+########### Typescript And Why Use
+
+1. Typescript is a open source programming language devoloped by microsoft 
+
+2. It is a typed superset of javascript that it compiles down to plain javascript that can be understood by browser
+
+3. We should use typescript because it is exactly similar to javascript just rename .js with .ts and everything is similar 
+
+4. Typescript provides optional static typing and type inference as js is dynamically type which means js does not know what type a variable is until it is actually instantiated at runtime which is too late , Typescript on the other hand add type support to the js hence errors are identified at compile time result in less error prone code and best part is specifying the type is complelty optional when we dont specify the type ts will infer the type for us and still point out errors 
+
+5. Easy to maintain and refactor large code base easily as it helps in more time coding and less time debugging 
+
+
+############ In Depth What Is Typescript
+
+Ts is a superset of js which means whatever we do in js can be done in ts as well but also allow you write js code in much more precise manner so your code face less error at runtime as most of the error already been shown or captured while writing code in compile time  , In fact all the code we write in ts is finally compiled into js as browser understand only js not ts 
+
+Ts is all about type safety which means if we do in js ::
+
+2 + '2'        => '22'
+null + 2       =>  2
+undefined + 2  =>  NaN
+
+here the above behaviour should not be allowed but js allow it and this is where ts allow us to stop this behaviour.
+
+When we built a project let say react project in .ts or .tsx file even though we are writing ts code but at last that code is being transpiled into js , In fact typescript is a development tool your project still runs in javascript the code you produce or send to the production is still a pure 100% js code. it is just a wrapper above js to produce less error prone js code 
+
+
+############### What Typescript is
+
+The only job of typescript is " Static Checking " it means whenever we write code the parser or syntax of language is constantly being analyzed by the IDEs but in case of js whatever we write in js is ok for js but error comes in runtime in browser and we want some static checker which checks my code as i try to write it. ex if i try to access an object which is not yet defined if something can analyze my code and can give me a hint that this object does not exist. So the whole job of ts is to analyze your code perfrom type check so that you dont run into runtime error
+
+
+############### Installation
+
+1. The way we use ts for learning and experiment and the way we use for development are different , the first one is globally install which we use for learning concept of ts but when we use with react for development then we need additional ts config file for addressing what type of ts setting we want in our project . To know more about config file or ts code example go to typescript official website and there in playground section go to config or example tab
+
+2. Install typescript by command "npm install -g typescript" and to see version of typescript command is "tsc -v" and to run ts file command 'tsc "name of the file"' and this command will create a compiled to js file which is for browser to understand ts code and now to run code use node instead of browser with html-js connection
+
+3. Now one addition to the work flow here is that we can automate the ts to js compile instead of doing manually and to do this write command "tsc 'name of file' --watch" and now it works just like nodemon work in express
