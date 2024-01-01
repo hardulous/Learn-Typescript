@@ -25,7 +25,7 @@ let paidUser: User = {     // created object of type User which contain credCard
     credCardDetails: 200000112      // 
 }
 
-// myUser.id = "23"    // error as id property is readOnly so we can not change it
+// freeUser.id = "23"    // error as id property is readOnly so we can not change it
 freeUser.name = "Amu"   // no error 
 
 // here credCardDetails is optional property so by default ts for better error handling automatically add "?" on this property

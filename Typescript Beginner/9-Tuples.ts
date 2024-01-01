@@ -5,7 +5,7 @@ let users1: string[] = ["aman","acey","nihir"]
 
 // now let say i want array of string , number , boolean etc .. but in a precise order and of fixed length so i will use tuple for this ::
 
-let users2: [string, number, boolean]   // a tuple of fixed length 2 where 1st , 2nd and 3rd element must be of type string , number and boolean respectively as pattern is fixed
+let users2: [string, number, boolean]   // a tuple of fixed length 3 where 1st , 2nd and 3rd element must be of type string , number and boolean respectively as pattern is fixed
 
 users2 = ["aman", 100, true]    // correct order
 // users2 = [199,"aman",true]   // error as order of the element in tuple is wrong 1st is string , then number and at last a boolean so have to follow the order

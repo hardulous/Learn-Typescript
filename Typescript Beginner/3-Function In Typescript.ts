@@ -5,7 +5,9 @@ function addTwo(num){
    return num + 2 
 }
 
-addTwo(5)   // here the type of addTwo() if i hover is any based on inference and also type of parameter num is also any becuase instead i am supposed to pass number only but even if i by mistake pass string it will allow me but it can throw error at runtime 
+// Here any operation on variable of type any will also return a any result
+
+addTwo(5)   // here the type of addTwo() if i hover is any based on inference and also type of parameter num is also any instead i am supposed to pass number only but even if i by mistake pass string it will allow me but it can throw error at runtime 
 
 addTwo("5")  // here the type of parameter is any so even passing string does not throw error but can give error at runtime
 
